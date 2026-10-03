@@ -1,0 +1,5 @@
+bin/
+obj/
+.vs/
+*.user
+!tyuiu.cources.programming.interfaces.dll
