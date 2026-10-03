@@ -8,7 +8,7 @@ namespace Tyuiu.GrishchenkoSA.Sprint2.Task7.V2.Lib
         public bool CheckDotInShadedArea(double x, double y)
         {
             bool c1 = (Math.Pow(x, 2) + Math.Pow(y, 2) <= 1);
-bool c2 = (y >= x / 2);
+bool c2 = (y <= x / 2);
 bool c3 = (y <= 0);
 bool c4 = (x >= 0);
 return (c1 && c2 && c3 && c4);
