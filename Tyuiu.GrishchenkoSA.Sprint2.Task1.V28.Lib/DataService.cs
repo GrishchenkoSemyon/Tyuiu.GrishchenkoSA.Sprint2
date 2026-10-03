@@ -7,14 +7,14 @@ namespace Tyuiu.GrishchenkoSA.Sprint2.Task1.V28.Lib
     {
         public bool[] GetLogicOperations(int a, int b, int c, int d)
         {
-            bool[] result = new bool[6];
-result[0] = (a == b) | (c != d);
-result[1] = (a != b) & (c < d);
-result[2] = (a < b) || (c > d);
-result[3] = (a > b) && (c <= d);
-result[4] = !(a <= b) ^ (c >= d);
-result[5] = (a >= b) | !(c == d);
-return result;
+            bool[] res = new bool[6];
+res[0] = (a < b) ^ (c == d);
+res[1] = (b > c) & (a != d);
+res[2] = (a <= c) | (b >= d);
+res[3] = (a == b) && (c <= d);
+res[4] = !(a >= b) || (c != d);
+res[5] = (a > d) ^ (b < c);
+return res;
         }
     }
 }
